@@ -1,0 +1,58 @@
+h3 {  
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #618f30;
+  font-size: 18px;
+  text-align: center; /* 文本水平居中 */
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  }
+
+
+.box {
+    border: 1px solid gray; /* 添加1px的黑色边框 */
+    margin: 0 auto; /* 水平居中，上下外边距为0 */
+    width: 360px; /* 设置容器的宽度，可根据需要进行调整 */
+  }
+
+  label, input[type="number"] {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  label {
+    width: 50%; /* 调整标签的宽度，可以根据需要进行调整 */
+    text-align: left; /* 将标签文本左对齐 */
+  }
+
+  input[type="number"] {
+    width: 30%; /* 调整输入框的宽度，可以根据需要进行调整 */
+    text-align: right; /* 将输入框内容右对齐 */
+  }
+
+  .line-break {
+    margin-top: 10px; /* 添加上外边距，创建10px的间距 */
+  }
+
+  .costButton {
+  text-align: center;
+  margin: 0 auto; 
+  width: 360px; 
+  }
+
+.showPrice {  
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #618f30;
+  font-size: 18px;
+  text-align: center; /* 文本水平居中 */
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  }
+
+
+  #saveData, #sendEmail {
+    display: none;
+  }
