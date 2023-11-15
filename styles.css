@@ -106,9 +106,9 @@ img {
 
 /* 通用的 checkbox 样式 */
 input[type="checkbox"] {
-  appearance: none;
+  /*appearance: none;
   -webkit-appearance: none;
-  -moz-appearance: none;
+  -moz-appearance: none;*/
   width: 20px;
   height: 20px;
   border: 1px solid var(--colours-mid-grey, #B0B0B0);
@@ -117,11 +117,11 @@ input[type="checkbox"] {
   background-color: white;
 }
 
-/* 选中状态的 checkbox 样式 */
+/* 
 input[type="checkbox"]:checked {
   background-color: white;
-  /* 更改对号颜色和粗细，以及居中显示 */
-  &::before {
+
+    &::before {
     content: "\2713";
     display: block;
     width: 20px;
@@ -129,10 +129,10 @@ input[type="checkbox"]:checked {
     color: var(--your-checked-color, #618f30);
     text-align: left;
     line-height: 16px;
-    font-weight: bold; /* 设置对号的粗细 */
-    font-size: 20px; /* 设置对号的大小 */
+    font-weight: bold; 
+    font-size: 20px; 
   }
-}
+}*/
 
 
 /* 去掉默认的选择箭头 */
