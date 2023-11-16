@@ -117,11 +117,16 @@ input[type="checkbox"] {
   background-color: white;
 }
 
-/* 
+input[type="checkbox"]:checked {
+  background-color: #618f30; /* 修改为你想要的绿色 */
+}
+
+/*
+
 input[type="checkbox"]:checked {
   background-color: white;
-
-    &::before {
+ 
+  &::before {
     content: "\2713";
     display: block;
     width: 20px;
@@ -134,7 +139,6 @@ input[type="checkbox"]:checked {
   }
 }
 */
-
 
 /* 去掉默认的选择箭头 */
 #location::-ms-expand {
@@ -167,24 +171,74 @@ input[type="checkbox"]:checked {
     margin-top: 10px; /* 添加上外边距，创建10px的间距 */
   }
 
+  /*
   .costButton {
   text-align: center;
   margin: 0 auto; 
   width: 360px; 
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 5px;
+  background: var(--colours-primary-green, #699A30);
   }
+  */
+
+.costButton {
+  text-align: center;
+  margin: 0 auto; 
+  width: 360px; 
+  display: flex;
+  justify-content: center;
+}
+
+
+
+#renoCost {
+    color: var(--colours-white, #FFF);
+    text-align: center;
+    font-family: Helvetica Neue;
+    font-size: 16px;
+    font-style: bold;
+    font-weight: 360;
+    line-height: 12px; /* 150% */
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 5px;
+    border: 1px solid var(--colours-mid-grey, #B0B0B0);
+    background: var(--colours-primary-green, #699A30);
+}
+
+
+
+
+.centerDiv {
+  display: flex;
+  justify-content: center;
+ }
+
 
 .showPrice {  
   font-family: "Inter-SemiBold", Helvetica;
   font-weight: 600;
   color: #618f30;
   font-size: 18px;
-  text-align: center; /* 文本水平居中 */
+  background: white;
+  width: 360px;
   display: flex;
-  justify-content: center; /* 水平居中 */
-  align-items: center; /* 垂直居中 */
+  justify-content: center;
   }
+
 
 
   #saveData, #sendEmail {
     display: none;
   }
+
