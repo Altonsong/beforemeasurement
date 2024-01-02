@@ -764,3 +764,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+//2024-01-02 打开报价表部分
+
+document.getElementById("renoCost").addEventListener("click", function() {
+  // 加载 estimate.html 文件
+  fetch('estimate.html')
+      .then(response => response.text())
+      .then(data => {
+          // 替换 estimate.html 中的 $20,300.00
+          const showPrice = 'Your dynamic price here'; // 这里应该是动态的价格值，你可以设置变量或者从其他地方获取这个值
+          const modifiedData = data.replace(/\$20,300\.00/, showPrice);
+
+          // 创建一个新的 Blob 对象并将修改后的 HTML 内容放入其中
+          const blob = new Blob([modifiedData], { type: 'text/html' });
+
+          // 创建一个 URL 对象以便加载修改后的 HTML 内容
+          const url = URL.createObjectURL(blob);
+
+          // 在新标签页中打开修改后的 estimate.html
+          window.open(url, '_blank');
+      })
+      .catch(error => console.error('Error:', error));
+});
+
