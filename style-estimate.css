@@ -1,0 +1,154 @@
+body {
+  background-color: #e2e5e2;
+  font-family: arial;
+}
+
+.bold-text{
+  font-weight: bold;
+}
+
+.page {
+  display: flex;
+  width: 880px;
+  height: 1130px;
+  background-color: #f7f8f5;
+  margin: auto;
+  margin-top:40px;
+  margin-bottom:40px
+ 
+}
+
+
+.textArea {
+  display:flex;
+  flex-direction:column;
+  width:720px;
+  height:970px;
+  margin:auto;
+  /* border: 1px solid green; */
+}
+
+.title {
+  color:#699A30;
+  font-size: 50px;
+  text-align: right;
+  padding-top: 20px;
+  padding-right:20px;
+  height: 80px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  height: 80px;
+  padding-bottom: 20px;
+  border-bottom: #b0b0b0 1px solid;
+  font-size: 14px;
+}
+
+.customer {
+  display: flex;
+  flex-direction:column;
+  align-self:flex-end
+}
+
+.dateArea {
+  text-align: right;
+  padding-right:20px;
+  /* background-color: yellor; */
+  display: flex;
+  flex-direction:column;
+  align-self:flex-end
+}
+
+.price {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  height: 130px;
+  padding-bottom: 20px;
+  /* background-color: #b0b0b0; */
+  font-size: 14px;
+justify-content: center;
+}
+
+.cost {
+  display: flex;
+  flex-direction:column;
+  }
+
+.time {
+  text-align: right;
+  padding-right:20px;
+  display: flex;
+  flex-direction:column;
+}
+
+.estimateCost,
+.estimateCompletion {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.costNumber {
+  font-weight: bold;
+  font-size: 38px;
+}
+
+.weeks {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.serviceTitle {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.serviceArea {
+  display:flex;
+  flex-wrap: wrap;
+  border-bottom: #b0b0b0 1px solid;
+  padding-bottom:20px;
+}
+
+
+.design,
+.contract,
+.insurance,
+.demolish,
+.kitchen,
+.bathroom,
+.paint,
+.flooring,
+.plumbing,
+.sitemanage,
+.cleaning,
+.warranty {
+  display:flex;
+  align-items:center;
+  padding-left: 60px;
+  width:260px;
+  height: 70px;
+  font-size: 14px;
+  gap: 20px;
+}
+
+.material-symbols-outlined {
+  color:#699A30;
+  transform: scale(1.5); /* 放大1.5倍 */
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 2fr;
+  grid-gap: 40px;
+  align-items: center;
+  padding-top:20px;
+  padding-left: 10px;
+  font-size: 13px;
+}
+
